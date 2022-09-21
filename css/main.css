@@ -4,7 +4,7 @@
 } */
 
 .container{
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 10vh 2fr 3fr;
@@ -30,7 +30,16 @@
     text-decoration: none;
 }
 
-.prof-pic{ grid-area: prof-pic; }
+.prof-pic{
+    grid-area: prof-pic;
+    display: flex;
+    align-items: center;
+}
+
+#profPic{
+    width: 100%;
+    height: auto;
+}
 
 .prof-info{ grid-area: prof-info; }
 
