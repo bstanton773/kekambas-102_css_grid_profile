@@ -41,7 +41,18 @@
     height: auto;
 }
 
-.prof-info{ grid-area: prof-info; }
+.prof-info{
+    grid-area: prof-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 5vw;
+}
+
+.prof-info h1{
+    align-self: center;
+}
 
 .posts{ grid-area: posts; }
 
